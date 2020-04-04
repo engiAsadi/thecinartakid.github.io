@@ -1,0 +1,147 @@
+html body {
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    
+    background-color: #323232;
+}
+
+body {
+    background-color: #363062;
+}
+
+.left-side{
+    display: flex;
+    
+}
+
+.logo{
+    
+
+}
+.logo img{
+    max-width: 20%;
+    padding: 10px;
+    
+}
+/* #cinarta-logo{
+    max-width: 15%;
+    display: block;
+} */
+.right-side{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.right-side .navigation-bar a{
+
+    
+    text-decoration: none;
+    padding: .8rem 1rem;
+    text-transform:uppercase ;
+    color: aliceblue;
+    transition: color 0.5s;
+}
+
+.navigation-bar a:hover{
+    color: #f3c623;    
+}
+
+.images-placeholder{
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin: 0px 0px 10px 50px;
+    
+
+
+}
+
+.image-placeholder{
+    margin-left: 15px;
+    flex:40%;
+    max-width:30%;
+    padding:0 4px;
+    background-color: #363062;
+}
+
+.image-placeholder img{
+
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.footer-navbar{
+    padding: 60px 80px;
+    background-color: #d8b9c3;
+    text-align: center;
+    
+   
+}
+
+.footer-navbar :first-child{
+    background-color: #827397;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.footer-navbar h1{
+    font-size: small;
+}
+
+
+@media screen and (max-width: 800px)  {
+
+    .images-placeholder{
+        margin-left: 0px;
+    }
+
+    .image-placeholder{
+        -ms-flex: 50%;
+        flex: 40%;
+        max-width: 50%;
+        margin-left: 0px;
+    }
+
+}
+ 
+
+
+@media screen and (max-width: 600px){
+
+    .image-placeholder{
+        flex:100%;
+        max-width:100%;
+    }
+
+    header{
+        display: block;
+    }
+
+    .right-side{
+        display: block;
+        background-color: #4d4c7d;
+        margin: 0px;
+    }
+
+    .navigation-bar {
+        border :0.5px solid black;
+        padding: 7px 0px;
+        
+    }
+
+    .logo{
+        text-align: center;
+    }
+    .logo img{
+        max-width: 30%;
+        text-align: center;
+        padding: 0px;
+    }
+}
